@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--把函数的定义和调用拆成两部分-->
+  <script>
+    function success(data) {
+      console.log('拿到了Data数据：')
+      console.log(data)
+    }
+  </script>
+
+  <script>
+    success({ name: 'zs', age: 20 })
+    // 调success能成功，因为在页面中不论定义多少个script标签，它们里面的代码都是共享的
+  </script>
+</body>
+
+</html>
